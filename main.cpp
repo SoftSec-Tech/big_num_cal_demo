@@ -11,6 +11,31 @@ string get_string() {
     return *str;
 }
 
+big_data_int calc(big_data_int a, big_data_int b, string op) {
+    big_data_int c;
+    switch (op.c_str()[0]) {
+        case '+':
+            c = a + b;
+            break;
+        case '-':
+            c = a - b;
+            break;
+        case '*':
+            c = a * b;
+            break;
+        case '/':
+            c = a / b;
+            break;
+        case '%':
+            c = a % b;
+            break;
+        default:
+            cout<<"Wrong operator input"<<endl;  
+            return big_data_int("-1");
+    }
+    return c;
+}
+
 int main() 
 {
     cout<<"please input two numbers:"<<endl;
