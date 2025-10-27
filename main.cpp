@@ -2,16 +2,19 @@
 #include <string>
 #include "big_data_int.h"
 
-string* get_string() {
-    string* s = new string();
-    cin>>*s;
-    return s;
+string get_string() {
+    string* str = new string();
+    str->reserve(100);
+    std::cout << "请输入内容：";
+    std::cin.getline(str->c_str(), 100);
+    return str;
+    return *str;
 }
 
 int main() 
 {
     cout<<"please input two numbers:"<<endl;
-    string* s_a, *s_b;
+    string s_a, s_b;
     s_a = get_string();
     s_b = get_string();
 
