@@ -2,6 +2,12 @@
 #include <string>
 #include "big_data_int.h"
 
+string* get_string() {
+    string* s = new string();
+    cin>>*s;
+    return s;
+}
+
 int main() 
 {
     cout<<"please input two numbers:"<<endl;
