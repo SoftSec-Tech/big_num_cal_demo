@@ -40,3 +40,7 @@ int main()
 
     return 0;
 }
+
+void test(int val){
+    val / 10;
+}
