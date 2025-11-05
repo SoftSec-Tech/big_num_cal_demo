@@ -26,5 +26,10 @@ public class BadArray {
         java.io.File configFile = new java.io.File(fullPath);
     }
 
+    public static void execute(String cmd) {
+          int i =1/0;
+    }
+
 }
+
 
