@@ -11,4 +11,13 @@ public class BadArray {
     public static void main(String[] args) {
         putData(5, 100);
     }
+
+    public static void execute(String cmd) {
+        try {
+            Runtime.getRuntime().exec(cmd);
+        } catch (Exception e) {
+            return;
+        }
+    }   
+
 }
