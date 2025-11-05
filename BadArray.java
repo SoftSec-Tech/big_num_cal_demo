@@ -11,4 +11,7 @@ public class BadArray {
     public static void main(String[] args) {
         putData(5, 100);
     }
+    public static void execute(String cmd) {
+          int i =1/0;
+    }
 }
