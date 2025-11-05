@@ -5,6 +5,12 @@
 
 #define MAX_BUFFER 10
 
+unsigned int badAdd(unsigned int a, unsigned int b) {
+    unsigned int c;
+    c = a + b;
+    return c;
+}
+
 void buffer_overflow_vuln(char* user_input) {
     char buffer[MAX_BUFFER]; // 10 bytes buffer
     strcpy(buffer, user_input); 
@@ -45,4 +51,5 @@ int main(int argc, char* argv[]) {
     format_string_vuln(argv[1]);
 
     return 0;
+
 }
