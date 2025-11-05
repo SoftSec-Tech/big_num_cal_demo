@@ -35,6 +35,12 @@ void format_string_vuln(char* log_message) {
     printf("\n");
 }
 
+unsigned int badAdd2(unsigned int a, unsigned int b) {
+    unsigned int c;
+    c = a + b;
+    return c;
+}
+
 int main(int argc, char* argv[]) {
     if (argc < 2) {
         printf("Usage: %s <input_string>\n", argv[0]);
@@ -53,3 +59,4 @@ int main(int argc, char* argv[]) {
     return 0;
 
 }
+
