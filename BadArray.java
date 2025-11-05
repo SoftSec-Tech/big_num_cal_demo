@@ -18,6 +18,13 @@ public class BadArray {
         } catch (Exception e) {
             return;
         }
-    }   
+    }
+
+    public static void loadConfig(String configName) {
+        String basePath = "configs";
+        String fullPath = basePath + configName;
+        java.io.File configFile = new java.io.File(fullPath);
+    }
 
 }
+
