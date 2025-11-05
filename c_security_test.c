@@ -29,3 +29,10 @@ int main(int argc, char* argv[]) {
     return 0;
 
 }
+
+unsigned int badDivide(unsigned int a) {
+    unsigned int c;
+    c = a/0;
+    return c;
+}
+
