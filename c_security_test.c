@@ -18,9 +18,15 @@ int integer_overflow_vuln(int count, int size) {
     return total_bytes;
 }
 
+unsigned int badAdd(unsigned int a, unsigned int b) {
+    unsigned int c;
+    c = a + b;
+    return c;
+}
 
 int main(int argc, char* argv[]) {
     buffer_overflow_vuln(argv[1]);
     int result = integer_overflow_vuln(INT_MAX, 2);
     return 0;
+
 }
