@@ -5,9 +5,10 @@
 
 #define MAX_BUFFER 10
 
-void vulnerable_func(char *input) {
-    char buf[8];  
-    strcpy(buf, input);  
+unsigned int badAdd(unsigned int a, unsigned int b) {
+    unsigned int c;
+    c = a + b;
+    return c;
 }
 
 void buffer_overflow_vuln(char* user_input) {
@@ -52,3 +53,4 @@ int main(int argc, char* argv[]) {
     return 0;
 
 }
+
