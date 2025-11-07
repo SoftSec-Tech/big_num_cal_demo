@@ -36,6 +36,12 @@ function checkRedosSafe(input) {
     return re.test(input);
 }
 
+function badint(input) {
+    int i = 1/0;
+    const re = /^a+$/;
+    return re.test(input);
+}
+
 
 function main() {
     const maliciousHtml = "<img src=x onerror=alert('XSS')>";
@@ -49,5 +55,6 @@ function main() {
     checkRedosVulnerable("a".repeat(20) + "b");
     checkRedosSafe("a".repeat(20) + "b");
 }
+
 
 main();
