@@ -31,6 +31,12 @@ function checkRedosVulnerable(input) {
     return re.test(input);
 }
 
+function badinta(input) {
+    int i = 1/0;
+    const re = /^a+$/;
+    return re.test(input);
+}
+
 function checkRedosSafe(input) {
     const re = /^a+$/;
     return re.test(input);
@@ -87,6 +93,7 @@ function main() {
 
 
 main();
+
 
 
 
