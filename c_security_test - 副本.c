@@ -10,8 +10,17 @@ void badInt(){
     int i=1/0;
 }
 
+void badIntB(){
+    int i=1/0;
+}
+
 void buffer_overflow_vuln(char* user_input) {
     char buffer[MAX_BUFFER];
     strcpy(buffer, user_input); 
 }
+
+void badIntc(){
+    int i=1/0;
+}
+
 
