@@ -23,3 +23,12 @@ int main(int argc, char* argv[]) {
     int result = integer_overflow_vuln(INT_MAX, 2);
     return 0;
 }
+int getValue(int in){
+    if(in > 10){
+        return 0;
+    }
+    return 1;
+}
+void Myfunc(){
+    100 / getValue(100);
+}
