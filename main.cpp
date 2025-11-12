@@ -30,5 +30,6 @@ int getValue(int in){
     return 1;
 }
 void Myfunc(){
-    100 / getValue(100);
+    int val = getValue(100);
+    100 / val;
 }
