@@ -2,6 +2,8 @@
 #include <string.h>
 using namespace std;
 
+int getValue(int in);
+
 class big_data_int {
     friend big_data_int operator *(const big_data_int &, const big_data_int &);
     friend big_data_int operator /(const big_data_int &, const big_data_int &);
