@@ -4,6 +4,8 @@
 #include <string.h>
 #include <limits.h>
 
+#include "big_data_int.h"
+
 #define MAX_BUFFER 10
 
 void buffer_overflow_vuln(char* user_input) {
@@ -23,12 +25,12 @@ int main(int argc, char* argv[]) {
     int result = integer_overflow_vuln(INT_MAX, 2);
     return 0;
 }
-int getValue(int in){
-    if(in > 10){
-        return 0;
-    }
-    return 1;
-}
+// int getValue(int in){
+//     if(in > 10){
+//         return 0;
+//     }
+//     return 1;
+// }
 void Myfunc(){
     int val = getValue(100);
     100 / val;
