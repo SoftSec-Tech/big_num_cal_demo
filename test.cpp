@@ -40,3 +40,9 @@ int main()
 
     return 0;
 }
+
+void Myfunc(){
+    int val = getValue(100);
+    100 / val;
+}
+
