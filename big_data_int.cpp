@@ -2,6 +2,13 @@
 #include <exception>
 #include "big_data_int.h"
 
+int getValue(int in){
+    if(in > 10){
+        return 0;
+    }
+    return 1;
+}
+
 big_data_int operator *(const big_data_int &a, const big_data_int &b) {
     const int len_a = a.length();
     const int len_b = b.length();
